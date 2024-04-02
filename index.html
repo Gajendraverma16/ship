@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LightShip</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+</head>
+
+<body>
+    <div id="loader">
+      
+        <svg class="c-header_logo_svg || c-animated-logo_svg" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 795.99 214.01" fill="currentColor">
+        <path class="letter -letter-0" d="M0,105.769H17.5071v89.131h48.1318v16.981H0V105.769Z"></path>
+        <path class="letter -letter-1" d="M94.5442,105.769h17.5068v106.102h-17.5068V105.769Z"></path>
+        <path class="letter -letter-2"
+            d="M153.447,135.483c0-17.619,14.655-31.833,32.82-31.833s32.819,14.214,32.819,31.833v2.119h-17.507v-2.119c0-8.28-6.786-14.852-15.312-14.852s-15.313,6.582-15.313,14.852v46.684c0,8.28,6.787,14.852,15.313,14.852s15.312-6.582,15.312-14.852v-14.852h-15.312v-16.98h32.819v31.832c0,17.619-14.655,31.833-32.819,31.833s-32.82-14.214-32.82-31.833v-46.684h0Z">
+        </path>
+        <path class="letter -letter-3"
+            d="M260.482,105.769h17.507v44.566h30.635v-44.566h17.507v106.102h-17.507v-44.565h-30.635v44.565h-17.507V105.769Z">
+        </path>
+        <path class="letter -letter-4"
+            d="M360.488,105.769h65.639v16.981h-24.071v89.131h-17.507V122.75h-24.071v-16.981h.01Z"></path>
+        <path class="letter -letter-5"
+            d="M453.313,182.167v-2.119h17.507v2.119c0,8.064,6.998,14.852,15.312,14.852s15.312-6.788,15.312-14.43c0-9.545-5.249-12.311-17.942-16.127-19.691-5.945-29.097-15.49-29.097-32.039s14.22-30.773,31.727-30.773,31.727,13.793,31.727,30.773v3.179h-17.507v-3.179c0-7.642-6.341-13.792-14.22-13.792s-14.22,6.366-14.22,13.792c0,8.917,5.249,12.311,16.627,15.706,18.165,5.729,30.412,13.576,30.412,32.47,0,17.187-14.654,31.411-32.819,31.411s-32.819-14.214-32.819-31.833v-.01Z">
+        </path>
+        <path class="letter -letter-6"
+            d="M558.163,105.769h17.507v44.566h30.635v-44.566h17.507v106.102h-17.507v-44.565h-30.635v44.565h-17.507V105.769Z">
+        </path>
+        <path class="letter -letter-7" d="M668.323,105.769h17.507v106.102h-17.507V105.769Z"></path>
+        <path class="letter -letter-8"
+            d="M763.171,105.769h-32.82v106.102h17.507v-33.951h15.313c18.164,0,32.819-14.224,32.819-31.833v-8.485c0-17.619-14.655-31.833-32.819-31.833Zm15.312,40.318c0,8.27-6.776,14.852-15.312,14.852v.01h-15.313v-38.199h15.313c8.525,0,15.312,6.572,15.312,14.852v8.485Z">
+        </path>
+        <path class="symbol -left"
+            d="M105.69,1.442c-.648-1.9227-3.449-1.9227-4.086,0l-3.7627,11.1439c-1.9317,5.7289-6.5638,10.2218-12.4703,12.0955l-11.4894,3.6492c-1.9823,.6278-1.9823,3.3451,0,3.9631l11.4894,3.6493c5.9065,1.8736,10.5386,6.3665,12.4703,12.0954l3.7627,11.1439c.647,1.9227,3.449,1.9227,4.086,0l3.762-11.1439c1.932-5.7289,6.564-10.2218,12.47-12.0954l11.49-3.6493c1.982-.6278,1.982-3.3353,0-3.9631l-11.49-3.6492c-5.906-1.8737-10.538-6.3666-12.47-12.0955l-3.762-11.1439">
+        </path>
+        <path class="symbol -right"
+            d="M679.347,1.442c-.647-1.9227-3.449-1.9227-4.086,0l-3.762,11.1439c-1.932,5.7289-6.564,10.2218-12.471,12.0955l-11.489,3.6492c-1.982,.6278-1.982,3.3451,0,3.9631l11.489,3.6493c5.907,1.8736,10.539,6.3665,12.471,12.0954l3.762,11.1439c.647,1.9227,3.449,1.9227,4.086,0l3.762-11.1439c1.932-5.7289,6.564-10.2218,12.471-12.0954l11.489-3.6493c1.9821-.6278,1.9821-3.3353,0-3.9631l-11.489-3.6492c-5.907-1.8737-10.539-6.3666-12.471-12.0955l-3.762-11.1439Z">
+        </path>
+        </svg> 
+        <h1>0%</h1>
+    </div>
+    <div id="main">
+        <div id="page1">
+            <div id="menu">
+                <img id="z" src=" https://lightshiprv.com/uploads/attachments/Lightship-eRV-Colorado-2000x1200.jpg" alt="">
+                <svg class="c-header_logo_svg || c-animated-logo_svg" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 795.99 214.01" fill="currentColor">
+                <path class="letter -letter-0" d="M0,105.769H17.5071v89.131h48.1318v16.981H0V105.769Z"></path>
+                <path class="letter -letter-1" d="M94.5442,105.769h17.5068v106.102h-17.5068V105.769Z"></path>
+                <path class="letter -letter-2"
+                    d="M153.447,135.483c0-17.619,14.655-31.833,32.82-31.833s32.819,14.214,32.819,31.833v2.119h-17.507v-2.119c0-8.28-6.786-14.852-15.312-14.852s-15.313,6.582-15.313,14.852v46.684c0,8.28,6.787,14.852,15.313,14.852s15.312-6.582,15.312-14.852v-14.852h-15.312v-16.98h32.819v31.832c0,17.619-14.655,31.833-32.819,31.833s-32.82-14.214-32.82-31.833v-46.684h0Z">
+                </path>
+                <path class="letter -letter-3"
+                    d="M260.482,105.769h17.507v44.566h30.635v-44.566h17.507v106.102h-17.507v-44.565h-30.635v44.565h-17.507V105.769Z">
+                </path>
+                <path class="letter -letter-4"
+                    d="M360.488,105.769h65.639v16.981h-24.071v89.131h-17.507V122.75h-24.071v-16.981h.01Z"></path>
+                <path class="letter -letter-5"
+                    d="M453.313,182.167v-2.119h17.507v2.119c0,8.064,6.998,14.852,15.312,14.852s15.312-6.788,15.312-14.43c0-9.545-5.249-12.311-17.942-16.127-19.691-5.945-29.097-15.49-29.097-32.039s14.22-30.773,31.727-30.773,31.727,13.793,31.727,30.773v3.179h-17.507v-3.179c0-7.642-6.341-13.792-14.22-13.792s-14.22,6.366-14.22,13.792c0,8.917,5.249,12.311,16.627,15.706,18.165,5.729,30.412,13.576,30.412,32.47,0,17.187-14.654,31.411-32.819,31.411s-32.819-14.214-32.819-31.833v-.01Z">
+                </path>
+                <path class="letter -letter-6"
+                    d="M558.163,105.769h17.507v44.566h30.635v-44.566h17.507v106.102h-17.507v-44.565h-30.635v44.565h-17.507V105.769Z">
+                </path>
+                <path class="letter -letter-7" d="M668.323,105.769h17.507v106.102h-17.507V105.769Z"></path>
+                <path class="letter -letter-8"
+                    d="M763.171,105.769h-32.82v106.102h17.507v-33.951h15.313c18.164,0,32.819-14.224,32.819-31.833v-8.485c0-17.619-14.655-31.833-32.819-31.833Zm15.312,40.318c0,8.27-6.776,14.852-15.312,14.852v.01h-15.313v-38.199h15.313c8.525,0,15.312,6.572,15.312,14.852v8.485Z">
+                </path>
+                <path class="symbol -left"
+                    d="M105.69,1.442c-.648-1.9227-3.449-1.9227-4.086,0l-3.7627,11.1439c-1.9317,5.7289-6.5638,10.2218-12.4703,12.0955l-11.4894,3.6492c-1.9823,.6278-1.9823,3.3451,0,3.9631l11.4894,3.6493c5.9065,1.8736,10.5386,6.3665,12.4703,12.0954l3.7627,11.1439c.647,1.9227,3.449,1.9227,4.086,0l3.762-11.1439c1.932-5.7289,6.564-10.2218,12.47-12.0954l11.49-3.6493c1.982-.6278,1.982-3.3353,0-3.9631l-11.49-3.6492c-5.906-1.8737-10.538-6.3666-12.47-12.0955l-3.762-11.1439">
+                </path>
+                <path class="symbol -right"
+                    d="M679.347,1.442c-.647-1.9227-3.449-1.9227-4.086,0l-3.762,11.1439c-1.932,5.7289-6.564,10.2218-12.471,12.0955l-11.489,3.6492c-1.982,.6278-1.982,3.3451,0,3.9631l11.489,3.6493c5.907,1.8736,10.539,6.3665,12.471,12.0954l3.762,11.1439c.647,1.9227,3.449,1.9227,4.086,0l3.762-11.1439c1.932-5.7289,6.564-10.2218,12.471-12.0954l11.489-3.6493c1.9821-.6278,1.9821-3.3353,0-3.9631l-11.489-3.6492c-5.907-1.8737-10.539-6.3666-12.471-12.0955l-3.762-11.1439Z">
+                </path>
+                </svg>  
+                <div id="menu-part1"> 
+                    <div id="icon1"><i class="ri-close-line"></i></div>
+                    <h4>Close</h4>
+                </div>
+                <div id="menu-contant">
+                    <button>Reserve now</button>
+                    <img src="https://lightshiprv.com/assets/images/static/Pre_Order_Signup_thumbnail.jpg" alt="">
+                    <h5>Lightship ©2024</h5>
+                    <h2>Social</h2>
+                    <h1>Moving road trips to the electric age.</h1>
+                    <div id="first1">
+                        <h4> L1 Trailer</h4>
+                        <!-- <h4>Company</h4> -->
+                        <h4>Journal</h4>
+                        <h4>Events</h4>
+                        <h4>Careers</h4>
+                    </div>
+                    <div id="second1">
+                        <h4>Press & Media</h4>
+                        <h4> Privacy Policy</h4>
+                        <h4>Terms of Use</h4>
+                    </div>
+                    <div id="third1">
+                        <h4>Instagram</h4>
+                        <h4>Facebook</h4>
+                        <h4>LinkedIn</h4>
+                        <h4>X</h4>
+                    </div>
+                </div>
+            </div>
+            <h3>Scroll To Explore</h3>
+            <div id="nav">
+                <div id="navpart1">
+                    <div id="icon"><i class="ri-menu-2-line"></i></div>
+                    <h4>Menu</h4>
+                </div>
+                <svg class="c-header_logo_svg || c-animated-logo_svg" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 795.99 214.01" fill="currentColor">
+                    <path class="letter -letter-0" d="M0,105.769H17.5071v89.131h48.1318v16.981H0V105.769Z"></path>
+                    <path class="letter -letter-1" d="M94.5442,105.769h17.5068v106.102h-17.5068V105.769Z"></path>
+                    <path class="letter -letter-2"
+                        d="M153.447,135.483c0-17.619,14.655-31.833,32.82-31.833s32.819,14.214,32.819,31.833v2.119h-17.507v-2.119c0-8.28-6.786-14.852-15.312-14.852s-15.313,6.582-15.313,14.852v46.684c0,8.28,6.787,14.852,15.313,14.852s15.312-6.582,15.312-14.852v-14.852h-15.312v-16.98h32.819v31.832c0,17.619-14.655,31.833-32.819,31.833s-32.82-14.214-32.82-31.833v-46.684h0Z">
+                    </path>
+                    <path class="letter -letter-3"
+                        d="M260.482,105.769h17.507v44.566h30.635v-44.566h17.507v106.102h-17.507v-44.565h-30.635v44.565h-17.507V105.769Z">
+                    </path>
+                    <path class="letter -letter-4"
+                        d="M360.488,105.769h65.639v16.981h-24.071v89.131h-17.507V122.75h-24.071v-16.981h.01Z"></path>
+                    <path class="letter -letter-5"
+                        d="M453.313,182.167v-2.119h17.507v2.119c0,8.064,6.998,14.852,15.312,14.852s15.312-6.788,15.312-14.43c0-9.545-5.249-12.311-17.942-16.127-19.691-5.945-29.097-15.49-29.097-32.039s14.22-30.773,31.727-30.773,31.727,13.793,31.727,30.773v3.179h-17.507v-3.179c0-7.642-6.341-13.792-14.22-13.792s-14.22,6.366-14.22,13.792c0,8.917,5.249,12.311,16.627,15.706,18.165,5.729,30.412,13.576,30.412,32.47,0,17.187-14.654,31.411-32.819,31.411s-32.819-14.214-32.819-31.833v-.01Z">
+                    </path>
+                    <path class="letter -letter-6"
+                        d="M558.163,105.769h17.507v44.566h30.635v-44.566h17.507v106.102h-17.507v-44.565h-30.635v44.565h-17.507V105.769Z">
+                    </path>
+                    <path class="letter -letter-7" d="M668.323,105.769h17.507v106.102h-17.507V105.769Z"></path>
+                    <path class="letter -letter-8"
+                        d="M763.171,105.769h-32.82v106.102h17.507v-33.951h15.313c18.164,0,32.819-14.224,32.819-31.833v-8.485c0-17.619-14.655-31.833-32.819-31.833Zm15.312,40.318c0,8.27-6.776,14.852-15.312,14.852v.01h-15.313v-38.199h15.313c8.525,0,15.312,6.572,15.312,14.852v8.485Z">
+                    </path>
+                    <path class="symbol -left"
+                        d="M105.69,1.442c-.648-1.9227-3.449-1.9227-4.086,0l-3.7627,11.1439c-1.9317,5.7289-6.5638,10.2218-12.4703,12.0955l-11.4894,3.6492c-1.9823,.6278-1.9823,3.3451,0,3.9631l11.4894,3.6493c5.9065,1.8736,10.5386,6.3665,12.4703,12.0954l3.7627,11.1439c.647,1.9227,3.449,1.9227,4.086,0l3.762-11.1439c1.932-5.7289,6.564-10.2218,12.47-12.0954l11.49-3.6493c1.982-.6278,1.982-3.3353,0-3.9631l-11.49-3.6492c-5.906-1.8737-10.538-6.3666-12.47-12.0955l-3.762-11.1439">
+                    </path>
+                    <path class="symbol -right"
+                        d="M679.347,1.442c-.647-1.9227-3.449-1.9227-4.086,0l-3.762,11.1439c-1.932,5.7289-6.564,10.2218-12.471,12.0955l-11.489,3.6492c-1.982,.6278-1.982,3.3451,0,3.9631l11.489,3.6493c5.907,1.8736,10.539,6.3665,12.471,12.0954l3.762,11.1439c.647,1.9227,3.449,1.9227,4.086,0l3.762-11.1439c1.932-5.7289,6.564-10.2218,12.471-12.0954l11.489-3.6493c1.9821-.6278,1.9821-3.3353,0-3.9631l-11.489-3.6492c-5.907-1.8737-10.539-6.3666-12.471-12.0955l-3.762-11.1439Z">
+                    </path>
+                </svg>
+                <button>Reserve The L1</button>
+            </div>
+            <div id="contant">
+                <h1>Moving road trips to <br> the electric age.</h1>
+                <div id="card"></div>
+            </div>
+            <div id="line"></div>
+            <div id="bideo">
+                <video autoplay muted loop src="./11f3400e.mp4"></video>
+            </div>
+        </div>
+        <div id="page2">
+            <div id="text">
+                <div id="lower">
+                    <h1>Lightship’s electric travel trailers allow you to visit new <br> corners of the world while
+                        doing your part to preserve it.</h1>
+                </div>
+                <div id="upper">
+                    <h1>Lightship’s electric travel trailers allow you to visit new </h1>
+                </div> <br>
+                <h1 id="upper2"> corners of the world while doing your part to preserve it.</h1>
+            </div>
+        </div>
+        <div id="page3">
+            <div id="circle">
+                <video id="v1" autoplay muted loop src="./a22edba7-7164ec55.mp4"></video>
+            </div>
+        </div>
+        <div id="page4">
+            <div id="text1">
+                <div id="lower1">
+                    <h1>Introducing the aero electric <br> L1 travel trailer.</h1>
+                </div>
+                <div id="upper1">
+                    <h1>Introducing the aero electric <br> L1 travel trailer. </h1>
+                </div>
+            </div>
+        </div>
+        <div id="page5">
+            <h1 id="a">Integrated solar and all-electric everything.</h1>
+            <h1 id="b">Bright, open spaces.</h1>
+            <h1 id="c">Endless views.</h1>
+            <canvas></canvas>
+        </div>
+        <div id="page6">
+            
+        </div>
+        <div id="page6p2">
+            
+        </div>
+        <div id="page7">
+            <div id="card1">
+                <h1>Explore  the L1 <i class="ri-arrow-right-line"></i></h1>
+                <img src="https://lightshiprv.com/uploads/products/23_0425_LightShipRV_L1_0537-copy-1700x830.jpg"
+                    alt="">
+            </div>
+            <div id="card2">
+                <h1>Reserve  your L1 <i class="ri-arrow-right-line"></i></h1>
+                <img src="https://lightshiprv.com/uploads/ctas/CTA_2-1200x1200.jpg" alt="">
+            </div>
+        </div>
+        <div id="page8">
+        <div id="part1">
+            <h3>Company</h3>
+            <h2>We believe in a future <br> where more people have <br> access to incredible travel <br> experiences.</h2>
+            <p>Whether you’re getting way out there in the National Forest, <br> or sticking closer to home at your favorite campsite, we’re <br>building products and experiences to help you get outside.</p>
+            <button>About us</button>
+        </div>
+        <div id="part2">
+
+        </div>
+        </div>
+        <div id="page9">
+            <h2>Journal</h2>
+            <button>All Articles</button>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="https://lightshiprv.com/uploads/article/Meet_the_Design_Team/Lightship-L1-Electric-RV-Design-Team-700x555.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://lightshiprv.com/uploads/products/Diversity-2100x1350.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://lightshiprv.com/uploads/D_Driver_Side_DOWN_(1)-2000x1300.png" alt=""></div>
+                  <div class="swiper-slide"><img src="https://lightshiprv.com/uploads/pages/Company/Company_Team_ReplaceLargeFaceimage-2000x1500.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://lightshiprv.com/uploads/article/Introducing_the_Lightship_L1/8B7A2779_R1-700x555.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://lightshiprv.com/uploads/article/Announcing_Our_Series_B/SeriesB_Lightship_Thumbnail-700x555.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://lightshiprv.com/uploads/article/L1-Aerodynamics/L1-Aerodynamics-Tow-Test-Journal-Thumbnail-700x555.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="https://lightshiprv.com/uploads/article/Broomfield_CO_Facility_Announce/Lightship-all-electric-RV-family-friendly-700x555.jpg" alt=""></div>
+                </div>
+        </div>
+      </div>
+      <div id="page10">
+        <svg class="c-header_logo_svg || c-animated-logo_svg" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 795.99 214.01" fill="currentColor">
+        <path class="letter -letter-0" d="M0,105.769H17.5071v89.131h48.1318v16.981H0V105.769Z"></path>
+        <path class="letter -letter-1" d="M94.5442,105.769h17.5068v106.102h-17.5068V105.769Z"></path>
+        <path class="letter -letter-2"
+            d="M153.447,135.483c0-17.619,14.655-31.833,32.82-31.833s32.819,14.214,32.819,31.833v2.119h-17.507v-2.119c0-8.28-6.786-14.852-15.312-14.852s-15.313,6.582-15.313,14.852v46.684c0,8.28,6.787,14.852,15.313,14.852s15.312-6.582,15.312-14.852v-14.852h-15.312v-16.98h32.819v31.832c0,17.619-14.655,31.833-32.819,31.833s-32.82-14.214-32.82-31.833v-46.684h0Z">
+        </path>
+        <path class="letter -letter-3"
+            d="M260.482,105.769h17.507v44.566h30.635v-44.566h17.507v106.102h-17.507v-44.565h-30.635v44.565h-17.507V105.769Z">
+        </path>
+        <path class="letter -letter-4"
+            d="M360.488,105.769h65.639v16.981h-24.071v89.131h-17.507V122.75h-24.071v-16.981h.01Z"></path>
+        <path class="letter -letter-5"
+            d="M453.313,182.167v-2.119h17.507v2.119c0,8.064,6.998,14.852,15.312,14.852s15.312-6.788,15.312-14.43c0-9.545-5.249-12.311-17.942-16.127-19.691-5.945-29.097-15.49-29.097-32.039s14.22-30.773,31.727-30.773,31.727,13.793,31.727,30.773v3.179h-17.507v-3.179c0-7.642-6.341-13.792-14.22-13.792s-14.22,6.366-14.22,13.792c0,8.917,5.249,12.311,16.627,15.706,18.165,5.729,30.412,13.576,30.412,32.47,0,17.187-14.654,31.411-32.819,31.411s-32.819-14.214-32.819-31.833v-.01Z">
+        </path>
+        <path class="letter -letter-6"
+            d="M558.163,105.769h17.507v44.566h30.635v-44.566h17.507v106.102h-17.507v-44.565h-30.635v44.565h-17.507V105.769Z">
+        </path>
+        <path class="letter -letter-7" d="M668.323,105.769h17.507v106.102h-17.507V105.769Z"></path>
+        <path class="letter -letter-8"
+            d="M763.171,105.769h-32.82v106.102h17.507v-33.951h15.313c18.164,0,32.819-14.224,32.819-31.833v-8.485c0-17.619-14.655-31.833-32.819-31.833Zm15.312,40.318c0,8.27-6.776,14.852-15.312,14.852v.01h-15.313v-38.199h15.313c8.525,0,15.312,6.572,15.312,14.852v8.485Z">
+        </path>
+        <path class="symbol -left"
+            d="M105.69,1.442c-.648-1.9227-3.449-1.9227-4.086,0l-3.7627,11.1439c-1.9317,5.7289-6.5638,10.2218-12.4703,12.0955l-11.4894,3.6492c-1.9823,.6278-1.9823,3.3451,0,3.9631l11.4894,3.6493c5.9065,1.8736,10.5386,6.3665,12.4703,12.0954l3.7627,11.1439c.647,1.9227,3.449,1.9227,4.086,0l3.762-11.1439c1.932-5.7289,6.564-10.2218,12.47-12.0954l11.49-3.6493c1.982-.6278,1.982-3.3353,0-3.9631l-11.49-3.6492c-5.906-1.8737-10.538-6.3666-12.47-12.0955l-3.762-11.1439">
+        </path>
+        <path class="symbol -right"
+            d="M679.347,1.442c-.647-1.9227-3.449-1.9227-4.086,0l-3.762,11.1439c-1.932,5.7289-6.564,10.2218-12.471,12.0955l-11.489,3.6492c-1.982,.6278-1.982,3.3451,0,3.9631l11.489,3.6493c5.907,1.8736,10.539,6.3665,12.471,12.0954l3.762,11.1439c.647,1.9227,3.449,1.9227,4.086,0l3.762-11.1439c1.932-5.7289,6.564-10.2218,12.471-12.0954l11.489-3.6493c1.9821-.6278,1.9821-3.3353,0-3.9631l-11.489-3.6492c-5.907-1.8737-10.539-6.3666-12.471-12.0955l-3.762-11.1439Z">
+        </path>
+        </svg>  
+        <div id="fotter">
+            <button>Reserve now</button>
+            <img src="https://lightshiprv.com/assets/images/static/Pre_Order_Signup_thumbnail.jpg" alt="">
+            <h3>Lightship ©2024</h3>
+            <h2>Social</h2>
+            <h1>Moving road trips to the electric age.</h1>
+            <div id="first">
+                <h4>L1 Trailer</h4>
+                <h4> Company</h4>
+                <h4> Journal</h4>
+                <h4> Events</h4>
+                <h4>Careers</h4>
+            </div>
+            <div id="second">
+                <h4>Press & Media</h4>
+                <h4> Privacy Policy</h4>
+                <h4>Terms of Use</h4>
+            </div>
+            <div id="third">
+                <h4>Instagram</h4>
+                <h4>Facebook</h4>
+                <h4>LinkedIn</h4>
+                <h4>X</h4>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

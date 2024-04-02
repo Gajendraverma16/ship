@@ -1,0 +1,1017 @@
+@font-face {
+    font-family: font1;
+    src: url(./F37Bolton-Regular.woff2);
+}
+
+@font-face {
+    font-family: font2;
+    src: url(./F37Bolton-Bold.woff2);
+}
+
+@font-face {
+    font-family: font3;
+    src: url(./SuisseIntlMono-Regular.woff2);
+}
+
+@font-face {
+    font-family: font4;
+    src: url(./SuisseIntlMono-Bold.woff2);
+}
+
+@font-face {
+    font-family: font5;
+    src: url(./SohneSchmal-Buch.woff2);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+/*------------------------------------------------ Loader ------------------------ */
+#loader{
+    height: 100vh;
+    width: 100%;
+    background-color:#E8E8E8;
+    position: fixed;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5%;
+    transition: all linear 0.5s;
+  }
+  #loader h1{
+    font-size: 25px;
+    font-family: font1;
+    font-weight: 100;
+  }
+  #loader svg{
+    color: black;
+    height: 41px;
+  }
+/*------------------------------------------------ Menu ------------------------ */
+#menu{
+    height: 100vh;
+    width: 100vw;
+    background-color: #E8E8E8;
+    position: absolute;
+    top: -100%;
+    left: 00%;
+    z-index: 200;
+}
+#menu-part1 {
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    gap: 15px;
+    color: black;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#menu-part1 #icon1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu-part1 #icon1:hover{
+    border: 1px solid rgba(255, 0, 0, 0.667);
+    background-color: black;
+    transition: all linear 0.2s;
+}
+#menu-part1 #icon1 i {
+    color: black;
+    font-size: 30px;
+}
+#menu-part1 #icon1 i:hover{
+    color: white;
+}
+#menu-part1 h4{
+    font-size: 19px;
+    font-family: font2;
+}
+#menu #z{
+    height: 200px;
+    width: 350px;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+    border-radius: 10px;
+}
+#menu svg {
+    color: black;
+    height: 41px;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+}
+#menu h5{
+    font-size: 15px;
+    font-family: font1;
+    font-weight: 100;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: black;
+}
+
+#menu h2 {
+    font-size: 15px;
+    font-family: font1;
+    font-weight: 100;
+    position: absolute;
+    top: 30%;
+    left: 21%;
+}
+
+#menu img {
+    height: 60%;
+    width: 20%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    border-radius: 10px;
+}
+
+#menu button {
+    font-family: font1;
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    position: absolute;
+    right: 120px;
+    top: 8%;
+    z-index: 10;
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+#menu button:hover{
+    color:rgba(255, 68, 0, 0.837);
+}
+#menu button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* border: 1px solid black; */
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+}
+#menu button:hover::before{
+    transform: scaleX(1);
+}
+#menu h1 {
+    font-family: font1;
+    opacity: 0;
+    text-transform:capitalize;
+    font-weight: 100;
+    font-size: 30px;
+    position: absolute;
+    bottom: 15%;
+    left: 40%;
+    z-index: 20;
+    color: black;
+}
+
+#menu #first1 {
+    font-family: font1;
+    display: flex;
+    font-size:40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left:25%;
+    height: 50%;
+    width: 40%;
+    font-weight: 100;
+    /* background-color: rgb(43, 67, 67); */
+}
+
+#menu #second1{
+    font-family: font1;
+    font-weight: 100;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 30%;
+    left: 3.5%;
+    height: 150px;
+    width: 150px;
+    /* background-color: aqua; */
+}
+
+#menu #third1{
+    font-family: font1;
+    font-weight: 100;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 31.5%;
+    left: 19%;
+    height: 150px;
+    width: 100px;
+    /* background-color: aqua; */
+}
+/*------------------------------------------------ page1 ------------------------ */
+#main{
+    overflow: hidden;
+}
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#page1 h3 {
+    font-size: 15px;
+    position: absolute;
+    bottom: 5%;
+    left: 43%;
+    z-index: 20;
+    color: aliceblue;
+    font-family: font2;
+    animation-name: anime4;
+    animation-duration: 0.2s;
+    animation-fill-mode:both;
+    animation-iteration-count: infinite;
+   animation-direction:alternate;
+}
+@keyframes anime4{
+    from{
+      bottom: 4%;
+
+    }
+    to{
+        bottom: 5%;
+    }
+}
+#nav {
+    font-family: font2;
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    /* backdrop-filter: blur(10px);
+    background-color:rgba(245, 245, 245, 0.399); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+#navpart1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    color: aliceblue;
+}
+
+#navpart1 #icon {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#navpart1 #icon:hover{
+    border: 1px solid rgba(216, 20, 20, 0.642);
+    background-color: white;
+    transition: all linear 0.2s;
+}
+#navpart1 #icon i {
+    color: aliceblue;
+    font-size: 30px;
+}
+#navpart1 #icon i:hover {
+    color: rgba(24, 24, 24, 0.772);
+}
+#navpart1 h4 {
+    font-size: 19px;
+    font-family: font2;
+}
+
+#nav svg {
+    color: aliceblue;
+    height: 41px;
+}
+
+#nav button{
+    font-family: font1;
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.8s linear;
+    position: relative;
+}
+#nav button:hover{
+    color:black;
+}
+#nav button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* border: 1px solid black; */
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+}
+#nav button:hover::before{
+    transform: scaleX(1);
+}
+#contant h1 {
+    font-family: font2;
+    font-size: 60px;
+    position: absolute;
+    top: 53%;
+    left: 50px;
+    z-index: 20;
+    color: aliceblue;
+}
+
+#contant #card {
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.516);
+    top: 55%;
+    right: 50px;
+    height: 250px;
+    width: 400px;
+    border-radius: 50px;
+    z-index: 8;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://lightshiprv.com/uploads/attachments/Lightship-all-electric-RV-family-friendly-2000x1200.jpg);
+}
+
+#line {
+    position: absolute;
+    top: 85%;
+    left: 50px;
+    height: 250px;
+    height: .1px;
+    width: 60%;
+    z-index: 8;
+    background-color: aliceblue;
+}
+
+#page1 #bideo {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+}
+
+#page1 #bideo video {
+    height: 125%;
+    background-position: center;
+    background-size: contain;
+}
+
+/* --------------------------------------- page2 ------------------------ */
+
+#page2 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#text {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#text #lower {
+    width: 100%;
+    font-family: font1;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    opacity: .3;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#text #upper {
+    width: 00%;
+    font-family: font1;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    opacity: 1;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#text #upper2 {
+    width: 00%;
+    font-family: font1;
+    font-size: 50px;
+    position: absolute;
+    top: 51.5%;
+    left: 50px;
+    opacity: 1;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* --------------------------------------- page3 ------------------------ */
+#page3 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    /* background-color: brown; */
+}
+
+#page3::-webkit-scrollbar {
+    display: none;
+}
+
+#page3 #circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+    z-index: 10;
+    opacity: 1;
+    overflow: hidden;
+}
+
+/* #circle{
+    height: 150px;
+    width: 150px;
+    position:absolute;
+    clip-path: circle(50% at 50% 50%);
+    z-index: 100;
+    background-color: white;
+    opacity: 1;
+} */
+#v1 {
+    height: 150px;
+    position: absolute;
+    top: 0%;
+    left: -40%;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --------------------------------------- page4 ------------------------ */
+#page4 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#text1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+#text1 #lower1 {
+    width: 100%;
+    font-family: font1;
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    opacity: .3;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#text1 #upper1 {
+    width: 00%;
+    /* transition: all linear 1s; */
+    font-family: font1;
+    font-size: 25px;
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    opacity: 1;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* --------------------------------------- page5 ------------------------ */
+#page5 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+#page5 canvas {
+    height: 100vh;
+    width: 100vw;
+}
+#page5 #a{
+    font-family: font2;
+    font-size: 50px;
+    position: absolute;
+    top: 100%;
+    /* opacity: 0; */
+    left: 15%;
+    z-index: 20;
+    color: aliceblue;
+}
+#page5 #b{  font-family: font2;
+    font-size: 50px;
+    position: absolute;
+    top: 180%;
+    left: 35%;
+    z-index: 20;
+    color: aliceblue;
+
+}
+#page5 #c{
+    font-family: font2;
+    font-size: 50px;
+    position: absolute;
+    top: 240%;
+    left: 35%;
+    z-index: 20;
+    color: aliceblue;
+
+}
+
+
+/* --------------------------------------- page6 ------------------------ */
+#page6 {
+    height: 100vh;
+    width: 100vw;
+}
+/* --------------------------------------- page6 p2 ------------------------ */
+#page6p2{
+    height: 100vh;
+    width: 100vw;
+}
+
+/* --------------------------------------- page7 ------------------------ */
+#page7 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#page7 i{
+    font-size: 30px;
+}
+#page7 #card1 {
+    margin-left: 20px;
+    height: 500px;
+    width: 680px;
+    /* background-color: red; */
+    border-radius: 50px;
+    overflow: hidden;
+}
+#page7 #card1 img {
+    opacity: 1;
+    height: 100%;
+}
+#page7 #card1 h1 {
+    opacity: 0;
+    font-family: font2;
+    font-size: 50px;
+    position: absolute;
+    top: -100%;
+    left: 50px;
+    z-index: 20;
+    color: rgb(255, 255, 255);
+}
+
+#page7 #card2 {
+    margin-right: 20px;
+    height: 500px;
+    width: 640px;
+    background-color: red;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+}
+#page7 #card2 img {
+    opacity: 1;
+    width: 100%;
+}
+
+#page7 #card2 h1 {
+    opacity: 0;
+    font-family: font2;
+    font-size: 50px;
+    position: absolute;
+    top:-100%;
+    left: 50px;
+    z-index: 20;
+    color: white;
+}
+
+/* --------------------------------------- page8 ------------------------ */
+#page8 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#page8 #part1 {
+    height: 100vh;
+    width: 49%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#page8 #part1 h3 {
+    font-size: 20px;
+    color: black;
+    font-family: font1;
+    font-weight: 100;
+}
+
+#page8 #part1 h2 {
+    font-family: font1;
+    font-size: 40px;
+    font-weight: 100;
+    color: black;
+}
+
+#page8 #part1 p {
+    font-family: font2;
+    font-size: 15px;
+    color: black;
+}
+ #part1 button{
+    font-family: font1;
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+    margin-top: 25px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.4s linear;
+}
+#part1 button:hover{
+    color:white;
+}
+#part1 button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /* border: 1px solid black; */
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleY(0);
+}
+#page8 #part1 button:hover::before{
+    transform: scaleY(1);
+}
+#page8 #part2 {
+    height: 80vh;
+    width: 49%;
+    /* background-color: aqua; */
+    overflow: hidden;
+    background-image: url("https://lightshiprv.com/uploads/attachments/Lightship-eRV-Colorado-2000x1200.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+}
+
+/* --------------------------------------- page9 ------------------------ */
+#page9 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* background-color: red; */
+}
+
+#page9 h2 {
+    font-family: font1;
+    font-weight: 100;
+    font-size: 40px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 20;
+    color: black;
+}
+
+#page9 button {
+    font-family: font1;
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 110px;
+    left: 280px;
+    position: relative;
+    cursor: pointer;
+    transition: color 0.4 linear;
+}
+#page9 button:hover{
+    color:white;
+}
+#page9 button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /* border: 1px solid black; */
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+}
+#page9 button:hover::before{
+    transform: scaleX(1);
+}
+.swiper {
+    /* background-color: red; */
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    height: 50%;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.swiper-slide img {
+    margin-left: -450px;
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --------------------------------------- page10 ------------------------ */
+#page10 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    /* background-color: red; */
+}
+
+#page10 svg {
+    height: 30%;
+    transform: translate(50%, 100%);
+}
+
+#fotter {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    height: 60%;
+    width: 95%;
+    border-radius: 50px;
+    background-color: #E8E8E8;
+    position: absolute;
+    bottom: 17px;
+    overflow: hidden;
+}
+
+#fotter h3 {
+    font-size: 15px;
+    font-family: font1;
+    font-weight: 100;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+}
+
+#fotter h2 {
+    font-size: 15px;
+    font-family: font1;
+    font-weight: 100;
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+
+#fotter img {
+    height: 100%;
+    width: 23%;
+    position: absolute;
+    right: 00%;
+}
+
+#fotter button {
+    font-family: font1;
+    font-size: 16px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    position: absolute;
+    right: 70px;
+    top: 40px;
+    z-index: 10;
+    /* position: relative; */
+    /* left: 00px;
+    top: 40px; */
+    cursor: pointer;
+    transition: color 0.4s linear;
+}
+#fotter button:hover{
+    color:rgba(255, 68, 0, 0.837);
+}
+#fotter button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    /* border: 1px solid black; */
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+    transform: scaleX(0);
+}
+#fotter button:hover::before{
+    transform: scaleX(1);
+}
+#fotter h1 {
+    font-family: font1;
+    font-weight: 100;
+    font-size: 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    z-index: 20;
+    color: black;
+}
+
+#first {
+    font-family: font1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    height: 150px;
+    width: 100px;
+    font-weight: 100;
+    /* background-color: aqua; */
+}
+
+#second {
+    font-family: font1;
+    font-weight: 100;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 15%;
+    left: 40%;
+    height: 150px;
+    width: 150px;
+    /* background-color: aqua; */
+}
+
+#third {
+    font-family: font1;
+    font-weight: 100;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 15%;
+    left: 19%;
+    height: 150px;
+    width: 100px;
+    /* background-color: aqua; */
+}
